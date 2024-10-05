@@ -1,0 +1,73 @@
+function [E] = Energyfunction_Database(AminoAcid,DistanceMatrix,database)
+A = length(DistanceMatrix) ;
+for i = 1 : A
+    for j = i : A
+        k = AminoAcid(i) ;
+        h = AminoAcid(j) ;
+        if k>h
+             c = k ;
+             k = h ;
+             h = c ;
+        end
+         for k=1:L(1,x)
+            if D{i,j}(k,1)>=0 && D{i,j}(k,1)<0.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,1);
+            elseif D{i,j}(k,1)>=0.75 && D{i,j}(k,1)<1.25
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,2);
+            elseif D{i,j}(k,1)>=1.25 && D{i,j}(k,1)<1.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,3);
+            elseif D{i,j}(k,1)>=1.75 && D{i,j}(k,1)<2.25
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,4);
+            elseif D{i,j}(k,1)>=2.25 && D{i,j}(k,1)<2.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,5);
+            elseif D{i,j}(k,1)>=2.75 && D{i,j}(k,1)<3.25 
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,6);
+            elseif D{i,j}(k,1)>=3.25 && D{i,j}(k,1)<3.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,7);
+            elseif D{i,j}(k,1)>=3.75 && D{i,j}(k,1)<4.25
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,8);
+            elseif D{i,j}(k,1)>=4.25 && D{i,j}(k,1)<4.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,9);
+            elseif D{i,j}(k,1)>=4.75 && D{i,j}(k,1)<5.25
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,10);
+            elseif D{i,j}(k,1)>=5.25 && D{i,j}(k,1)<5.75
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,11);
+            elseif D{i,j}(k,1)>=5.75 && D{i,j}(k,1)<6.25
+               referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,12);
+%             elseif D{i,j}(k,1)>=6.25 && D{i,j}(k,1)<6.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,13);
+%             elseif D{i,j}(k,1)>=6.75 && D{i,j}(k,1)<7.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,14);
+%             elseif D{i,j}(k,1)>=7.25 && D{i,j}(k,1)<7.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,15);
+%             elseif D{i,j}(k,1)>=7.75 && D{i,j}(k,1)<8.25 
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,16);
+%             elseif D{i,j}(k,1)>=8.25 && D{i,j}(k,1)<8.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,17);
+%             elseif D{i,j}(k,1)>=8.75 && D{i,j}(k,1)<9.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,18);
+%             elseif D{i,j}(k,1)>=9.25 && D{i,j}(k,1)<9.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,19);
+%             elseif D{i,j}(k,1)>=9.75 && D{i,j}(k,1)<10.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,20);
+%             elseif D{i,j}(k,1)>=10.25 && D{i,j}(k,1)<10.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,21);
+%             elseif D{i,j}(k,1)>=10.75 && D{i,j}(k,1)<11.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,22);
+%             elseif D{i,j}(k,1)>=11.25 && D{i,j}(k,1)<11.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,23);
+%             elseif D{i,j}(k,1)>=11.75 && D{i,j}(k,1)<12.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,24);
+%             elseif D{i,j}(k,1)>=12.25 && D{i,j}(k,1)<12.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,25);
+%             elseif D{i,j}(k,1)>=12.75 && D{i,j}(k,1)<13.25 
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,26);
+%             elseif D{i,j}(k,1)>=13.25 && D{i,j}(k,1)<13.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,27);
+%             elseif D{i,j}(k,1)>=13.75 && D{i,j}(k,1)<14.25
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,28);
+%             elseif D{i,j}(k,1)>=14.25 && D{i,j}(k,1)<=14.75
+%                referenceEN{i,j}(k)=ReferenceEnergy.logodd_d{v1,v2}(1,29); 
+            end
+        end 
+end
