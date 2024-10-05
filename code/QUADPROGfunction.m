@@ -1,0 +1,14 @@
+function[result]=QUADPROGfunction(H1,H2)
+f=[];
+A=[];
+B=[];
+Aeq=[];
+beq=[];
+H=H1+H2;
+b=size(H,2);
+lb(1:b-1)=-Inf;
+lb(b)=0.25;
+ub(1:b-1)=+Inf;
+ub(b)=4;
+result=quadprog(H,f,A,B,Aeq,beq,lb,ub);
+end
